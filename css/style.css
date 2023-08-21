@@ -303,6 +303,13 @@ a:hover, a:active, a:focus {
   height: 240px;
 }
 
+.background-image {
+    background-image: url('images/background-image.jpg');
+
+    background-size: cover;
+    background-position: center;
+}
+
 
 /*---------------------------------------
   About section              
