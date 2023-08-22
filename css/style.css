@@ -130,7 +130,7 @@ a:hover, a:active, a:focus {
 }
 
 #about img, #team img {
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 #work {
@@ -203,6 +203,7 @@ a:hover, a:active, a:focus {
   margin-bottom: 0;
   background-color: #ffffff;
   padding-top: 22px;
+  background-image: linear-gradient(rgb(179, 181, 199), rgb(225, 219, 228), rgb(199, 198, 200));
 }
 
 .custom-navbar .navbar-brand {
