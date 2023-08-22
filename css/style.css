@@ -306,12 +306,6 @@ a:hover, a:active, a:focus {
   height: 230px;
 }
 
-.background-image {
-    background-image: url('images/background-image.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
 
 /*---------------------------------------
   About section              
@@ -401,6 +395,12 @@ a:hover, a:active, a:focus {
 /*---------------------------------------
   Contact section              
 -----------------------------------------*/
+
+.background-image {
+    background-image: url('images/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 #contact .form-control {
   border-radius: 0px;
