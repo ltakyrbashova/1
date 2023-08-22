@@ -305,7 +305,6 @@ a:hover, a:active, a:focus {
 
 .background-image {
     background-image: url('images/background-image.jpg');
-
     background-size: cover;
     background-position: center;
 }
