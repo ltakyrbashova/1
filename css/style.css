@@ -391,6 +391,98 @@ a:hover, a:active, a:focus {
 }
 
 
+/* *: This is a universal selector, which targets all HTML elements on the page. */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins" sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* --------faq----------- */
+
+/* all FAQ section */
+.faq {
+  padding: 10px 12%;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* header */
+.faq h2 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+/* ul tag - unordered list */
+.accordion {
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+
+/* li tags - list items */
+.accordion li {
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+
+/* styles the label elements that are nested within li elements */
+.accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #303030;
+  margin-bottom: 2px;
+  cursor: pointer; /*This changes the cursor to a pointer when hovering over the label. This indicates to users that the label is interactive and clickable.*/
+  position: relative;
+}
+
+/* This CSS rule targets the pseudo-element ::after that's added after each label element. Here it creates a visual indicator (a plus sign) that changes when 
+certain actions are taken */
+label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s; /*This property adds a smooth transition effect to the transform property. When the transform property changes (e.g., due to a user interaction), 
+  the change will occur over a duration of 0.5 seconds, creating a visual animation effect.*/
+}
+
+/* hiding the checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* This CSS rule targets the elements with the class .content that are nested within elements with the class  */
+.accordion .content {
+  background: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+/* gives the effect of revealing additional information when the checkbox is checked. */
+.accordion input[type="checkbox"]:checked + label ~ .content {
+  max-height: 600px;
+  padding: 30px 20px;
+}
+
+.accordion input[type="checkbox"]:checked + label:after {
+  transform: rotate(135deg);
+}
+
+
 
 /*---------------------------------------
   Contact section              
@@ -567,93 +659,3 @@ a:hover, a:active, a:focus {
 }
 
 
-/* *: This is a universal selector, which targets all HTML elements on the page. */
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins" sans-serif;
-  box-sizing: border-box;
-}
-
-body {
-  background: #000;
-  color: #fff;
-}
-
-/* --------faq----------- */
-
-/* all FAQ section */
-.faq {
-  padding: 10px 12%;
-  text-align: center;
-  font-size: 18px;
-}
-
-/* header */
-.faq h2 {
-  font-weight: 900;
-  font-size: 3rem;
-}
-
-/* ul tag - unordered list */
-.accordion {
-  margin: 60px auto;
-  width: 100%;
-  max-width: 750px;
-}
-
-/* li tags - list items */
-.accordion li {
-  list-style: none;
-  width: 100%;
-  padding: 5px;
-}
-
-/* styles the label elements that are nested within li elements */
-.accordion li label {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  font-size: 18px;
-  font-weight: 500;
-  background: #303030;
-  margin-bottom: 2px;
-  cursor: pointer; /*This changes the cursor to a pointer when hovering over the label. This indicates to users that the label is interactive and clickable.*/
-  position: relative;
-}
-
-/* This CSS rule targets the pseudo-element ::after that's added after each label element. Here it creates a visual indicator (a plus sign) that changes when 
-certain actions are taken */
-label::after {
-  content: "+";
-  font-size: 34px;
-  position: absolute;
-  right: 20px;
-  transition: transform 0.5s; /*This property adds a smooth transition effect to the transform property. When the transform property changes (e.g., due to a user interaction), 
-  the change will occur over a duration of 0.5 seconds, creating a visual animation effect.*/
-}
-
-/* hiding the checkbox */
-input[type="checkbox"] {
-  display: none;
-}
-
-/* This CSS rule targets the elements with the class .content that are nested within elements with the class  */
-.accordion .content {
-  background: #303030;
-  text-align: left;
-  padding: 0 20px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s, padding 0.5s;
-}
-
-/* gives the effect of revealing additional information when the checkbox is checked. */
-.accordion input[type="checkbox"]:checked + label ~ .content {
-  max-height: 600px;
-  padding: 30px 20px;
-}
-
-.accordion input[type="checkbox"]:checked + label:after {
-  transform: rotate(135deg);
-}
