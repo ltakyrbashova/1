@@ -391,19 +391,6 @@ a:hover, a:active, a:focus {
 }
 
 
-/* *: This is a universal selector, which targets all HTML elements on the page. */
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins" sans-serif;
-  box-sizing: border-box;
-}
-
-body {
-  background: #000;
-  color: #fff;
-}
-
 /* --------faq----------- */
 
 /* all FAQ section */
